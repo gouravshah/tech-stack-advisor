@@ -25,6 +25,8 @@ demo = gr.Interface(
     outputs="text",
     title="Tech Stack Advisor",
     description="Get a recommended tech stack based on your project and team!"
+    flagging_dir="/tmp/flagged"  # ✅ Set writable path
+    #allow_flagging="never"  # ✅ Disable flagging
 )
 
 demo.launch(server_name="0.0.0.0", server_port=7860)
